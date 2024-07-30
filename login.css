@@ -1,0 +1,29 @@
+css
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4285F4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
+

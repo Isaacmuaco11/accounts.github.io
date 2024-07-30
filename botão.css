@@ -1,0 +1,43 @@
+```css
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button i {
+  margin-right: 10px;
+}
+
+.folder {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.folder i {
+  margin-right: 5px;
+}
+
+.folder span {
+  margin-right: 5px;
+}
+

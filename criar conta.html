@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    
+  </h1>
+</body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #007bff, #6f42c1);
+        color: #000;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    h1 {
+        font-style: italic;
+        color: #000;
+    }
+
+    input {
+        padding: 10px;
+        margin: 5px;
+        width: 200px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #fff;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #confirmationMessage {
+        display: none;
+        background-color: #fff;
+        color: #000;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<h1>Crie sua Conta</h1>
+<form id="registrationForm">
+    <input type="text" id="firstName" placeholder="Primeiro nome" required><br>
+    <input type="text" id="lastName" placeholder="Segundo nome" required><br>
+    <input type="text" id="emailOrPhone" placeholder="Email ou número de telefone" required><br>
+    <input type="password" id="password" placeholder="Palavra passe" required><br>
+    <button type="submit">Criar conta</button>
+</form>
+<div id="confirmationMessage"></div>
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const firstName = document.getElementById('Nomw').value;
+        const lastName = document.getElementById('Nome').value;
+        const emailOrPhone = document.getElementById('emailOrPhone').value;
+        const password = document.getElementById('palavra passe').value;
+        
+        const confirmationMessage = `obrigado por criar a sua conta guardamos a espera., ${Nome} ${Apelido}! Registramos o cadastro ${Email ou número} and password ${palavra paase} aceitadmos.`;
+        
+        document.getElementById('confirmationMessage').textContent = confirmationMessage;
+        document.getElementById('confirmationMessage').style.display = 'block';
+        
+        // You can add additional logic here to handle form submission, like sending data to a server
+    });
+</script>
+</body>
+</html>
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account with Google</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<button id="googleButton">
+  <img src="content://media/external/downloads/1000052722" alt="Google Icon">
+  Criar conta google
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings and Folder Button</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<button id="settingsButton">
+  <i class="fas fa-cog"></i> Settings
+  <div class="folder">
+    <i class="fas fa-folder"></i>
+    <span>.html</span>
+    <span>.css</span>
+    <span>.js</span>
+  </div>
+</button>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

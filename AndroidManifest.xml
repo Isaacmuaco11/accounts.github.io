@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"    package="2.3"
+    android:versionCode="1"
+    android:versionName="1.0">
+    
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29"/>
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="2.3.MainActivity"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    
+</manifest>
+// Importing necessary libraries
+const axios = require('axios');
+
+// Function to request verification for Facebook Lite account
+async function requestVerification(userId, accessToken) {
+    const url = `https://graph.facebook.com/v12.0/${userId}/verification`;
+    const params = {
+        access_token: accessToken,
+        verification_type: 'lite_account'
+    };
+
+    try {
+        const response = await axios.post(url, params);
+        console.log('Verification request sent:', response.data);
+    } catch (error) {
+        console.error('Error sending verification request:', error.response.data);
+    }
+}
+
+// Example usage
+const userId = 'YOUR_USER_ID';
+const accessToken = 'YOUR_ACCESS_TOKEN';
+requestVerification(userId, accessToken);
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Usuário" />
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/foto_perfil_bloqueado" />
+
+</LinearLayout>
+ 

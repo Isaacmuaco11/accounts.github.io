@@ -1,0 +1,29 @@
+```css
+body {
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+}
+
+.top-section {
+    background-color: black;
+    height: 50px; /* Adjust the height as needed */
+}
+
+.left-section,
+.right-section {
+    background-color: yellow;
+    height: 100vh; /* 100% of the viewport height */
+    width: 50%; /* 50% of the viewport width */
+    position: fixed;
+    top: 0;
+}
+
+.left-section {
+    left: 0;
+}
+
+.right-section {
+    right: 0;
+}
+
